@@ -1,0 +1,82 @@
+{
+  "conductor": {
+    "file": "conductor.png",
+    "displayHeight": 83,
+    "frames": [
+      {
+        "x": 236,
+        "y": 91,
+        "width": 457,
+        "height": 883,
+        "anchorX": 221
+      },
+      {
+        "x": 859,
+        "y": 91,
+        "width": 473,
+        "height": 883,
+        "anchorX": 244
+      }
+    ]
+  },
+  "commuter-cv": {
+    "file": "commuter-cv.png",
+    "displayHeight": 78,
+    "frames": [
+      {
+        "x": 217,
+        "y": 80,
+        "width": 420,
+        "height": 890,
+        "anchorX": 229
+      },
+      {
+        "x": 894,
+        "y": 82,
+        "width": 424,
+        "height": 889,
+        "anchorX": 238
+      }
+    ]
+  },
+  "commuter-book": {
+    "file": "commuter-book.png",
+    "displayHeight": 79,
+    "frames": [
+      {
+        "x": 257,
+        "y": 58,
+        "width": 417,
+        "height": 931,
+        "anchorX": 233.5
+      },
+      {
+        "x": 867,
+        "y": 58,
+        "width": 435,
+        "height": 933,
+        "anchorX": 243
+      }
+    ]
+  },
+  "commuter-ddl": {
+    "file": "commuter-ddl.png",
+    "displayHeight": 82,
+    "frames": [
+      {
+        "x": 246,
+        "y": 66,
+        "width": 434,
+        "height": 905,
+        "anchorX": 217.5
+      },
+      {
+        "x": 858,
+        "y": 66,
+        "width": 433,
+        "height": 905,
+        "anchorX": 236
+      }
+    ]
+  }
+}

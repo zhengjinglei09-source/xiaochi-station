@@ -1,0 +1,19 @@
+
+> xiaochi-station@0.1.0 test
+> playwright test --project=webkit --workers=2 tests/gap.spec.ts --grep free actions at|wake can --reporter=list --output=test-results-gap-edge-final
+
+
+Running 2 tests using 2 workers
+
+(node:19375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19375) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [webkit] › tests/gap.spec.ts:79:1 › wake can be reopened after close, touch joystick stops, charger choice keeps chosen items (26.7s)
+  ✓  1 [webkit] › tests/gap.spec.ts:58:1 › free actions at physical objects repeat and resume after refresh; touch releases movement (2.0m)
+
+  2 passed (2.0m)

@@ -1,0 +1,29 @@
+两条路径并行计时，下方里程碑交错；DIY从车站开始，中介从已选地区/方式的检查点开始。
+Abroad ab-plan 0.0s
+Abroad ab-arrival 0.0s
+Abroad ab-plan 2.3s
+Abroad ab-ielts 16.2s
+Abroad ab-ielts 37.5s
+Abroad ab-documents 121.2s
+Abroad ab-teacher 159.2s
+Abroad ab-documents 155.8s
+Abroad ab-final-document 185.4s
+Abroad ab-teacher 194.0s
+Abroad ab-schools 211.8s
+Abroad ab-final-document 219.8s
+Abroad ab-wait 235.7s
+Abroad ab-parcel 245.3s
+Abroad ab-schools 246.2s
+Abroad ab-result-1 252.9s
+Abroad ab-result-2 275.6s
+Abroad ab-wait 280.0s
+Abroad ab-parcel 289.6s
+Abroad ab-accept 295.2s
+Abroad ab-result-1 297.2s
+Abroad ab-pack 306.9s
+Abroad ab-result-2 314.1s
+ABROAD AGENCY TOTAL 329.584s paced
+Abroad ab-accept 333.7s
+Abroad ab-pack 345.3s
+ABROAD TOTAL 373.092s paced
+  2 passed (6.3m)

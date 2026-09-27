@@ -1,0 +1,13 @@
+Civil event cs-notice at 0.0s
+Civil event cs-quiz at 26.7s
+Civil event cs-essay at 113.3s
+Civil event cs-national at 157.6s
+Civil event cs-after-exam at 181.8s
+Civil event cs-first-result at 192.9s
+Civil event cs-province at 206.0s
+Civil event cs-strategy at 230.6s
+Civil event cs-shortlist at 264.0s
+Civil event cs-interview at 278.4s
+Civil event cs-first-day at 329.3s
+CIVIL TOTAL 349.624s (paced reading)
+  1 passed (5.9m)

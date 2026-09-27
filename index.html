@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <link rel="icon" href="data:," />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e7e3d3" />
+    <meta name="description" content="《小迟去哪儿》Phase 03A · 社畜号第一章" />
+    <title>小迟去哪儿 · 人生车站</title>
+  </head>
+  <body>
+    <main id="game" aria-label="小迟去哪儿，人生车站交互原型">
+      <canvas id="scene" aria-label="人生车站。按住画面左侧并拖动，控制余小迟走动。"></canvas>
+      <header class="masthead"><img class="brand" src="/assets/ui/title.png" alt="小迟去哪儿" draggable="false" /></header>
+      <div class="location"><span class="station-mark" aria-hidden="true">↔</span><div><h1>人生车站</h1><span>LIFE STATION</span></div><span class="platform">01 <small>站台</small></span></div>
+      <div id="joystick" aria-hidden="true"><div class="joystick-cross"></div><div id="joystick-knob"></div></div>
+      <div class="movement-hint" id="movement-hint"><span class="hint-icon" aria-hidden="true">✥</span><div><strong>左侧按住拖动</strong><small>摇杆控制小迟移动</small></div></div>
+      <div class="platform-direction" id="platform-direction"><svg viewBox="0 0 22 32" aria-hidden="true" shape-rendering="crispEdges"><path fill="#526d5e" d="M9 0h4v4h4v4h4v4h-6v20H7V12H1V8h4V4h4z"/><path fill="#fff0bf" d="M10 5h2v4h4v1h-4v19h-2V10H6V9h4z"/></svg><span>向前走选择月台号</span></div>
+      <div id="onboarding-hint" class="onboarding-hint" role="status" aria-live="polite" aria-atomic="true">去不同月台看看吧</div>
+      <div id="onboarding-context" class="onboarding-context" role="status" aria-live="polite" aria-atomic="true"></div>
+      <button id="interaction" class="interaction" type="button" hidden></button>
+      <div id="dialogue-layer" class="dialogue-layer" data-input-blocker hidden>
+        <section class="dialogue-panel" role="dialog" aria-modal="true" aria-labelledby="dialogue-speaker" aria-describedby="dialogue-text">
+          <div class="dialogue-heading"><strong id="dialogue-speaker" data-speaker></strong><button class="dialogue-close" data-dialogue-close type="button" aria-label="关闭对话">×</button></div>
+          <div id="quiz-clock" hidden></div>
+          <p id="dialogue-text" data-dialogue-text aria-live="polite"></p>
+          <small class="route-status" data-route-status hidden></small>
+          <div class="dialogue-actions" data-dialogue-actions></div>
+        </section>
+      </div>
+      <div id="activity-layer" class="activity-layer" data-input-blocker hidden>
+        <section class="activity-panel" role="dialog" aria-modal="true" aria-labelledby="activity-title">
+          <div class="dialogue-heading"><h2 id="activity-title"></h2><button class="dialogue-close" data-activity-close type="button" aria-label="收起互动">×</button></div>
+          <p data-activity-intro></p><strong class="activity-status" data-activity-status aria-live="polite"></strong>
+          <div class="activity-scroll"><div data-activity-materials></div><div data-activity-options></div></div>
+          <button class="activity-submit" data-activity-submit type="button">提交</button>
+        </section>
+      </div>
+      <div id="upload-layer" class="upload-layer" data-input-blocker hidden>
+        <section class="upload-panel" role="dialog" aria-modal="true" aria-labelledby="upload-title">
+          <div class="dialogue-heading"><h2 id="upload-title">UPLOAD DOCUMENTS</h2><button class="dialogue-close" data-upload-close type="button" aria-label="收起文件">×</button></div>
+          <div class="upload-heading"><small data-folder></small><strong data-upload-count></strong></div>
+          <p data-upload-status role="status"></p>
+          <div class="upload-desktop"><div><div data-files></div><button type="button" data-files-next>下一页文件 →</button></div><div data-slots></div></div>
+          <button type="button" class="activity-submit" data-upload-submit>检查材料</button>
+          <span data-file-ghost class="file-ghost" hidden></span>
+        </section>
+      </div>
+      <div id="boarding-feedback" class="boarding-feedback" aria-live="polite" hidden>车门已打开</div>
+      <div id="phase-complete" class="phase-complete" data-input-blocker hidden>
+        <section role="status" aria-live="polite"><span class="completion-mark" aria-hidden="true">▰</span><h2 id="completion-title"></h2><p>这趟列车的故事还在准备中。</p><button id="station-return" type="button">回到人生车站</button><small id="station-save-status"></small></section>
+      </div>
+      <div id="life-hud" hidden>
+        <p id="life-hint" role="status"></p>
+        <button id="life-mail" data-input-blocker type="button" hidden>▤ 叮——新邮件</button>
+        <span id="life-date"></span><small id="checkpoint-warning" hidden>本机保存未成功，请保持页面打开。</small>
+      </div>
+      <div id="life-transition" data-input-blocker hidden><strong>2026年9月</strong><p>秋招开始了。</p></div>
+      <div id="chapter-end" class="phase-complete" data-input-blocker hidden>
+        <section role="status"><small>2026年10月</small><h2>秋招还在继续。</h2><p>社畜号 · 第一章结束</p><small id="chapter-save-status"></small><button id="chapter-save-retry" type="button" hidden>重试保存</button><button id="chapter-report" type="button" hidden>查看这一段人生</button></section>
+      </div>
+      <footer class="caption"><span>余小迟的第一站</span><span class="foot-track" aria-hidden="true">▪ ━━━━━ ▪</span></footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

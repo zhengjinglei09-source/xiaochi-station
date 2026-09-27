@@ -1,0 +1,100 @@
+
+> xiaochi-station@0.1.0 test
+> playwright test --project=chromium --workers=3 --grep-invert full Gap|all dinner answers|travel mountain|travel city|travel random|free actions at|all four short|free activity points --reporter=list --output=test-results-gap-regression
+
+[2m[WebServer] [22m(node:18524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 36 tests using 3 workers
+
+(node:18526) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18526) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Abroad ab-plan 0.0s
+Abroad ab-ielts 3.5s
+Abroad ab-arrival 0.0s
+Abroad ab-plan 1.0s
+  ✓   3 [chromium] › tests/abroad.spec.ts:67:1 › all region schools and result pools are independent of IELTS/method; upload validation and phone sizes (11.4s)
+Abroad ab-ielts 9.2s
+  ✓   4 [chromium] › tests/abroad.spec.ts:75:1 › touch dragging, cancellation, multi-touch ownership and no world movement (4.0s)
+Abroad ab-documents 29.3s
+Abroad ab-teacher 32.9s
+Abroad ab-final-document 39.1s
+Abroad ab-schools 45.7s
+  ✓   5 [chromium] › tests/abroad.spec.ts:87:1 › four region cards persist, teacher choices converge, one and two offers require explicit acceptance (32.9s)
+Abroad ab-documents 44.1s
+Abroad ab-wait 52.7s
+Abroad ab-teacher 47.8s
+Abroad ab-parcel 58.7s
+Abroad ab-final-document 54.1s
+Abroad ab-result-1 63.9s
+Abroad ab-schools 60.7s
+Abroad ab-result-2 71.4s
+Abroad ab-wait 67.7s
+Abroad ab-accept 75.9s
+Abroad ab-parcel 73.7s
+Abroad ab-pack 79.1s
+Abroad ab-result-1 78.8s
+Abroad ab-result-2 86.2s
+Chapter playthrough: 44.7 seconds (fast functional run)
+  ✓   6 [chromium] › tests/chapter.spec.ts:46:1 › station to October: real joystick explores all three maps and completes the self-prep chapter (44.8s)
+  ✓   7 [chromium] › tests/chapter.spec.ts:107:1 › coaching purchase commits once, cancellation rolls back, and missing storage is reported (2.7s)
+Abroad ab-accept 90.7s
+ABROAD AGENCY TOTAL 96.9s functional
+  ✓   2 [chromium] › tests/abroad.spec.ts:63:1 › agency branch and applying with 6.5 both complete (1.6m)
+  ✓   8 [chromium] › tests/chapter.spec.ts:139:1 › quiz shows red correction or green success, then continues; final email uses revised wording (3.6s)
+Abroad ab-pack 94.0s
+Civil event cs-notice at 0.0s
+Civil event cs-quiz at 4.4s
+  ✓   9 [chromium] › tests/chapter.spec.ts:173:1 › life collision, touch layout and reusable event/quiz data validation (18.0s)
+ABROAD TOTAL 116.972s functional
+  ✓   1 [chromium] › tests/abroad.spec.ts:54:1 › abroad full DIY route: station, drag, teacher, two schools, explicit accept and suitcase (2.0m)
+Civil event cs-essay at 20.4s
+Civil event cs-national at 24.2s
+  ✓  12 [chromium] › tests/civil-service.spec.ts:129:1 › cards, interview and result fit phones; cancellation and all final jobs remain data-driven (15.6s)
+  ✓  13 [chromium] › tests/civil-service.spec.ts:172:1 › touch scroll reaches essay cards without moving the world or selecting during a swipe (2.2s)
+  ✓  14 [chromium] › tests/movement.spec.ts:12:1 › loads, stays still in dead zone, moves diagonally, stops immediately on release (1.3s)
+  ✓  15 [chromium] › tests/movement.spec.ts:35:1 › walking changes the feet in every direction, idle is stable, and the old suitcase spot is walkable (416ms)
+  ✓  16 [chromium] › tests/movement.spec.ts:64:1 › right-side touch does not activate, pointer capture survives leaving trigger area, blur resets (657ms)
+  ✓  17 [chromium] › tests/movement.spec.ts:76:1 › actual touch events, multi-touch ownership, cancel, and no page scroll (692ms)
+  ✓  18 [chromium] › tests/movement.spec.ts:92:1 › all directions, constant diagonal speed, collision, boundary, and wall sliding (414ms)
+  ✓  19 [chromium] › tests/movement.spec.ts:122:3 › portrait layout 320x568 (496ms)
+  ✓  20 [chromium] › tests/movement.spec.ts:122:3 › portrait layout 390x844 (524ms)
+  ✓  21 [chromium] › tests/movement.spec.ts:122:3 › portrait layout 430x932 (518ms)
+  ✓  22 [chromium] › tests/movement.spec.ts:122:3 › portrait layout 768x1024 (783ms)
+Civil event cs-after-exam at 45.8s
+Civil event cs-first-result at 48.8s
+Civil event cs-province at 50.1s
+Civil event cs-strategy at 54.8s
+  ✓  23 [chromium] › tests/onboarding.spec.ts:21:1 › persistent hints guide two distinct platforms, conductor proximity, and boarding (17.8s)
+  ✓  24 [chromium] › tests/onboarding.spec.ts:75:1 › hints never time out; only distinct platform reads count; conductor follows proximity (419ms)
+  ✓  25 [chromium] › tests/onboarding.spec.ts:100:1 › crisp movement card stays on ground tiles and arrow text fits phone widths (1.5s)
+Civil event cs-shortlist at 72.1s
+Civil event cs-interview at 78.5s
+  ✓  11 [chromium] › tests/civil-service.spec.ts:102:1 › global quiz timer expires during reading, blocks late answers and continues with unanswered questions (1.3m)
+Civil event cs-first-day at 96.2s
+CIVIL TOTAL 105.481s (fast functional)
+  ✓  10 [chromium] › tests/civil-service.spec.ts:77:1 › full civil route: real joystick, two exams, interview and selected final job (1.8m)
+  ✓  28 [chromium] › tests/postgrad.spec.ts:142:1 › retest is guaranteed regardless of quiz scores and old seed; postgrad choices fit mobile sizes (10.2s)
+  ✓  29 [chromium] › tests/station.spec.ts:25:1 › nearby NPC button, branch dialogue, input lock, close and leaving range (2.4s)
+Postgrad playthrough: 59.9s (fast functional)
+  ✓  26 [chromium] › tests/postgrad.spec.ts:86:1 › continue: complete postgrad chapter, exam, free movement and persistent neutral result (1.0m)
+  ✓  30 [chromium] › tests/station.spec.ts:59:3 › walk to employment, inspect, decline, board, record only its initial route (9.8s)
+  ✓  31 [chromium] › tests/station.spec.ts:59:3 › walk to postgrad, inspect, decline, board, record only its initial route (7.1s)
+  ✓  32 [chromium] › tests/station.spec.ts:59:3 › walk to civil_service, inspect, decline, board, record only its initial route (5.2s)
+  ✓  33 [chromium] › tests/station.spec.ts:59:3 › walk to abroad, inspect, decline, board, record only its initial route (6.0s)
+  ✓  35 [chromium] › tests/station.spec.ts:120:1 › selection stays stable in overlap, rechecks range, and route history permits later transfers (343ms)
+  ✓  36 [chromium] › tests/station.spec.ts:138:1 › small-screen dialogue fits and two-finger interaction releases the held joystick (1.3s)
+  ✓  34 [chromium] › tests/station.spec.ts:59:3 › walk to gap, inspect, decline, board, record only its initial route (7.8s)
+  ✓  27 [chromium] › tests/postgrad.spec.ts:116:1 › stop: station, rejoin and transfer to employment retain history and October (55.9s)
+
+  36 passed (9.0m)

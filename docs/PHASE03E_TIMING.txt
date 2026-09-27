@@ -1,0 +1,28 @@
+
+> xiaochi-station@0.1.0 test
+> playwright test --project=chromium --workers=1 tests/gap.spec.ts --grep full Gap --reporter=list --output=test-results-gap-paced
+
+
+Running 1 test using 1 worker
+
+(node:15455) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15455) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+GAP gap-wake 0.0s
+GAP gap-day-1 11.5s
+GAP gap-day-2 75.7s
+GAP gap-dinner 127.7s
+GAP gap-experiment 148.8s
+GAP gap-graduation 194.2s
+GAP gap-map 213.6s
+GAP gap-items 237.6s
+GAP gap-travel-day 268.2s
+GAP gap-message 282.1s
+GAP gap-last-walk 288.0s
+GAP TOTAL 306.544s paced
+  ✓  1 [chromium] › tests/gap.spec.ts:41:1 › full Gap from station, repeatable free actions, AFK day, project, travel and saved quiet ending (5.1m)
+
+  Slow test file: [chromium] › tests/gap.spec.ts (5.1m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  1 passed (5.1m)

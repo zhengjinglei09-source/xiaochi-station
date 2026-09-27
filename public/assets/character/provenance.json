@@ -1,0 +1,30 @@
+{
+  "source": "用户提供：人物素材/风格2.png，右上角人物设定区域",
+  "method": "精确裁切，边界连通背景去底；未生成、重画角色",
+  "crops": {
+    "front": {
+      "left": 1187,
+      "top": 53,
+      "width": 77,
+      "height": 129
+    },
+    "left": {
+      "left": 1270,
+      "top": 60,
+      "width": 66,
+      "height": 122
+    },
+    "back": {
+      "left": 1340,
+      "top": 53,
+      "width": 71,
+      "height": 129
+    },
+    "walk-right": {
+      "left": 1414,
+      "top": 54,
+      "width": 92,
+      "height": 129
+    }
+  }
+}
